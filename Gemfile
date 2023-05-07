@@ -64,7 +64,7 @@ gem 'rails-i18n'
 gem 'dotenv-rails'
 
 group :production do
-  gem 'mysql2'
+  gem 'pg'
 end
 gem "net-smtp"
 gem "net-pop"
