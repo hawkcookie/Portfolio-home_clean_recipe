@@ -5,10 +5,10 @@
       <div class="col-md-4">
         <%= link_to post_path(post.id) do %>
           <div class="row">
-            <%= image_tag post.get_post_image(250,200) %>
+            <%#= image_tag post.get_post_image(250,200) %>
           </div>
           <div class="row">
-            <%= image_tag post.user.get_profile_image(30,30) %>
+            <%#= image_tag post.user.get_profile_image(30,30) %>
             <% if post.user.user_name.present? %>
               <%= post.user.user_name %>
             <% else %>

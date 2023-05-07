@@ -7,7 +7,7 @@
   
   <div class="row">
     <div class="show-post-img">
-      <%= image_tag @post.get_post_image(200,200) %>
+      <%#= image_tag @post.get_post_image(200,200) %>
       <div id="show-like">
         ♡<%= @post.likes.count %>
       </div>
@@ -19,7 +19,7 @@
   </div>
   <div class="row user-info">
     <span>作成者：</span>
-    <%= image_tag @user.get_profile_image(50,50) %>
+    <%#= image_tag @user.get_profile_image(50,50) %>
     <%= link_to @user.user_name, admin_user_path(@user.id) %>
   </div>
   <div class="row show-date">
@@ -47,7 +47,7 @@
       <% @post.cleaning_recipes.each do |cleaning_recipe| %>
         <div class="row recipe">
           <div class="col-lg-4">
-            <%= image_tag cleaning_recipe.get_recipe_image(100,100) %>
+            <%#= image_tag cleaning_recipe.get_recipe_image(100,100) %>
           </div>
           <div class="col-lg-8">
             <%= cleaning_recipe.cleaning_recipe %>
@@ -67,7 +67,7 @@
       <% @post.comments.each do |comment| %>
         <div class="row comment-list">
           <div class="col-lg-2">
-            <%= image_tag comment.user.get_profile_image(50,50) %>
+            <%#= image_tag comment.user.get_profile_image(50,50) %>
             <%= comment.user.user_name %>
           </div>
           <div class="col-lg-6">
